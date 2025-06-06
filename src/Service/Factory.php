@@ -18,7 +18,6 @@ use Http\Client\HttpClient;
 use Http\Discovery\Psr18ClientDiscovery;
 use Http\Discovery\Psr17FactoryDiscovery;
 use Psr\Http\Client\ClientInterface;
-use Http\Message\RequestFactory;
 use Psr\Http\Message\RequestFactoryInterface;
 
 /**
@@ -38,7 +37,7 @@ final class Factory
     /**
      * The request factory.
      *
-     * @var RequestFactory
+     * @var RequestFactoryInterface
      */
     private $requestFactory;
 
